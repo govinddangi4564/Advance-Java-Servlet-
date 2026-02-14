@@ -1,0 +1,5 @@
+package in.ashokit.dao;
+
+public class BookDAO {
+
+}

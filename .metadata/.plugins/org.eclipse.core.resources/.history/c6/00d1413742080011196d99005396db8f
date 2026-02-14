@@ -1,0 +1,34 @@
+package in.ashokit.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import in.ashokit.util.ConnectionFactory;
+
+public class BookDAO {
+	
+	private static final String INSERT_SQL = "insert into books values(?,?,?)";
+	
+	public boolean saveBook(int bookId, String bookName, double price) throws Exception {
+		
+		Connection con = ConnectionFactory.getConnection();
+		
+		PreparedStatement pstmt = con.prepareStatement(INSERT_SQL);
+		pstmt.setInt(1, bookId);
+		pstmt.setString(2, bookName);
+		pstmt.setDouble(3, price);
+		
+		int count = pstmt.executeUpdate();
+		
+//		if(count > 0) {
+//			return true;
+//		}else {
+//			return false;
+//		}
+		con.close();
+		
+		return count > 0;
+	
+	}
+
+}

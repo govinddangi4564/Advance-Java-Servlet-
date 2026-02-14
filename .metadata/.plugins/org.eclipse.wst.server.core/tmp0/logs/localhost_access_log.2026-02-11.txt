@@ -1,0 +1,8 @@
+127.0.0.1 - - [11/Feb/2026:22:45:57 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:45:58 +0530] "GET /Book-Servlet/ HTTP/1.1" 200 398
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:45:58 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:46:20 +0530] "POST /Book-Servlet/bookServlet HTTP/1.1" 405 753
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:47:48 +0530] "POST /Book-Servlet/bookServlet HTTP/1.1" 405 753
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:48:02 +0530] "POST /Book-Servlet/bookServlet HTTP/1.1" 405 753
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:48:05 +0530] "GET /Book-Servlet/ HTTP/1.1" 200 384
+0:0:0:0:0:0:0:1 - - [11/Feb/2026:22:48:14 +0530] "GET /Book-Servlet/BookServlet?bookId=101&bookName=Java&bookPrice=500&submit=Submit HTTP/1.1" 404 780

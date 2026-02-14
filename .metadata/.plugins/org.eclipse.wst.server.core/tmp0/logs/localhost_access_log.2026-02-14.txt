@@ -1,0 +1,12 @@
+127.0.0.1 - - [14/Feb/2026:22:33:21 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:33:22 +0530] "GET /Book-Servlet/ HTTP/1.1" 200 395
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:33:22 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:34:35 +0530] "POST /Book-Servlet/bookServlet HTTP/1.1" 200 13
+127.0.0.1 - - [14/Feb/2026:22:36:55 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:36:56 +0530] "GET /BookProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:36:56 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:37:33 +0530] "POST /BookProject/bookServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:37:59 +0530] "POST /BookProject/bookServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:38:15 +0530] "POST /BookProject/bookServlet HTTP/1.1" 200 15
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:38:43 +0530] "GET /BookProject/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [14/Feb/2026:22:38:54 +0530] "POST /BookProject/bookServlet HTTP/1.1" 200 15

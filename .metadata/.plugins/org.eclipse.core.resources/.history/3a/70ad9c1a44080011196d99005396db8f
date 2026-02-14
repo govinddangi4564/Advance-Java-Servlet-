@@ -1,0 +1,26 @@
+package in.ashokit.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/bookServlet")
+public class BookServlet extends HttpServlet{
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		// Capture for data
+		
+		String id = req.getParameter("bookId");
+		String name = req.getParameter("bookName");
+		String price = req.getParameter("bookPrice");
+		
+		// call dao method by giving form data
+		// send response to client
+	}
+}

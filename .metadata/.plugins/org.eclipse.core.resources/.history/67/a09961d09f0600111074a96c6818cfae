@@ -1,0 +1,29 @@
+package in.ashokit;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/bookServlet")
+public class BookServlet extends HttpServlet{
+	
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	
+		String bookId = req.getParameter("bookId");
+		String bookName = req.getParameter("bookNamr");
+		String bookPrice = req.getParameter("bookPrice");
+		
+		System.out.println(bookId);
+		System.out.println(bookName);
+		System.out.println(bookPrice);
+		
+		PrintWriter pw = new PrintWriter(null);
+		pw.write("Form Submited");
+	}
+
+}

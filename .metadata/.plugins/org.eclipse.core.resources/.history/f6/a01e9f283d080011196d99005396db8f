@@ -1,0 +1,22 @@
+package in.ashokit.util;
+
+import java.sql.Connection;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
+public class ConnectionFactory {
+	
+	public Connection getConnection() throws Exception {
+		
+		HikariConfig config = new HikariConfig();
+		config.setUsername(null);
+		config.setPassword(null);
+		config.setJdbcUrl(null);
+		
+		HikariDataSource ds = new HikariDataSource(config);
+		
+		Connection con = ds.getConnection();
+		
+		return con;
+	}
+}

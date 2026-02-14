@@ -1,0 +1,51 @@
+package in.ashokit.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import in.ashokit.dao.BookDAO;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/bookServlet")
+public class BookServlet extends HttpServlet {
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		try {
+
+			// Capture for data
+
+			String id = req.getParameter("bookId");
+			String name = req.getParameter("bookName");
+			String price = req.getParameter("bookPrice");
+
+			int bookId = Integer.parseInt(id);
+			double bookPrice = Double.parseDouble(price);
+
+			// call dao method by giving form data
+
+			BookDAO dao = new BookDAO();
+			boolean status = dao.saveBook(bookId, name, bookPrice);
+
+			// send response to client
+
+			String response = null;
+			if (status) {
+				response = "Record Inserted";
+			} else {
+				response = "Insertion Failed";
+			}
+
+			PrintWriter pw = resp.getWriter();
+			pw.append(response);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+}
