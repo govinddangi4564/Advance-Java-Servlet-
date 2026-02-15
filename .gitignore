@@ -1,6 +1,12 @@
 # Compiled class files
 *.class
 
+# Eclipse
+.metadata/
+.settings/
+.loadpath
+.recommenders
+
 # Log files
 *.log
 

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import in.ashokit.dao.BookDAO;
+import in.ashokit.dto.BookDTO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -25,13 +26,15 @@ public class BookServlet extends HttpServlet {
 
 			// Capture for data
 
-			String id = req.getParameter("bookId");
 			String name = req.getParameter("bookName");
-			String price = req.getParameter("bookPrice");
+			int bookId = Integer.parseInt(req.getParameter("bookId"));
+			double bookPrice = Double.parseDouble(req.getParameter("bookPrice"));
 
-			int bookId = Integer.parseInt(id);
-			double bookPrice = Double.parseDouble(price);
-
+			BookDTO dto = new BookDTO();
+			dto.setBookId(bookId);
+			dto.setBookName(name);
+			dto.setBookPrice(bookPrice);
+			
 			// call dao method by giving form data
 
 			BookDAO dao = new BookDAO();
