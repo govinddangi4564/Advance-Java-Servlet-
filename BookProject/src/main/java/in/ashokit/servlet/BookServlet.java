@@ -38,7 +38,7 @@ public class BookServlet extends HttpServlet {
 			// call dao method by giving form data
 
 			BookDAO dao = new BookDAO();
-			boolean status = dao.saveBook(bookId, name, bookPrice);
+			boolean status = dao.saveBook(dto);
 
 			// send response to client
 

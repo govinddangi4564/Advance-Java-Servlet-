@@ -32,9 +32,4 @@ public class BookDAO {
 	
 	}
 
-	public boolean saveBook(int bookId, String name, double bookPrice) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 }
