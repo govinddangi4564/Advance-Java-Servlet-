@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:03-Servlet-WebApp" serverId="Tomcat v11.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Book-Servlet" serverId="Tomcat v11.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:BookProject" serverId="Tomcat v11.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:RequestDispatecherApp" serverId="Tomcat v11.0 Server at localhost"/>
 </modules>

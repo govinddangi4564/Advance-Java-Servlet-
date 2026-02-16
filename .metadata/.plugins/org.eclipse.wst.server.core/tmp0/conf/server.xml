@@ -136,7 +136,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BookProject" path="/BookProject" reloadable="true" source="org.eclipse.jst.jee.server:BookProject"/><Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Book-Servlet" path="/Book-Servlet" reloadable="true" source="org.eclipse.jst.jee.server:Book-Servlet"/></Host>
+      <Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\BookProject" path="/BookProject" reloadable="true" source="org.eclipse.jst.jee.server:BookProject"/><Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Book-Servlet" path="/Book-Servlet" reloadable="true" source="org.eclipse.jst.jee.server:Book-Servlet"/><Context docBase="C:\Users\govin\eclipse-workspace-ee\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\RequestDispatecherApp" path="/RequestDispatecherApp" reloadable="true" source="org.eclipse.jst.jee.server:RequestDispatecherApp"/></Host>
     </Engine>
   </Service>
 </Server>
